@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Yeison García, Desarrollador Backend y Full Stack especializado en PHP, Laravel, Node.js y React. Ingeniero en formación en Medellín.">
+    <meta name="keywords" content="Yeison García, Desarrollador Backend, Laravel, PHP, React, Medellín, Portfolio">
+    <meta name="author" content="Yeison García">
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yeison García | Desarrollador Backend">
+    <meta property="og:description" content="Ingeniero en formación especializado en arquitectura de software y desarrollo Full Stack.">
+    <meta property="og:image" content="profile.jpg">
+
+    <title>Yeison García | Desarrollador Backend</title>
+    
+    <!-- Google Fonts: Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Anime.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO.</div>
+        <ul class="nav-links">
+            <li><a href="#skills">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="greeting">Hola, soy</p>
+                <h1 class="title ml11">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Yeison García</span>
+                    </span>
+                </h1>
+                <h2 class="subtitle">Desarrollador Backend & Ingeniero en Formación.</h2>
+                <p class="description">
+                    Tengo 23 años y vivo en Medellín. Especializado en arquitectura de software y lógica de servidor.
+                    Actualmente trabajo en <strong>Mántum Tecnología</strong> desarrollando nuevas funcionalidades 
+                    y optimizando sistemas.
+                </p>
+                <a href="#projects" class="cta-button">Ver Proyectos</a>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-wrapper">
+                    <!-- Sube tu foto como 'perfil.jpg' y cambia el src -->
+                    <img src="profile.jpg" alt="Foto de Yeison García" class="profile-img" loading="lazy">
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Timeline Section -->
+        <section id="education" class="section">
+            <h3 class="section-title">01. Trayectoria Académica</h3>
+            <div class="timeline">
+                
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Ingeniería de Software</h3>
+                        <span class="institution">Corporación Universitaria Minuto de Dios (UNIMINUTO)</span>
+                        <p>Actualmente cursando. Profundizando en ingeniería de software avanzada, arquitectura y gestión de proyectos.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Tecnólogo en Análisis y Desarrollo de Sistemas</h3>
+                        <span class="institution">SENA</span>
+                        <p>Formación intensiva en el ciclo completo de desarrollo de software, desde el análisis de requisitos hasta el despliegue.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Técnico en Programación de Software</h3>
+                        <span class="institution">SENA</span>
+                        <p>Fundamentos sólidos de lógica de programación y desarrollo de aplicaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h3 class="section-title">02. Cursos y Certificaciones</h3>
+            <div class="certs-grid">
+                
+                <!-- Backend -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h4>Desarrollo Backend</h4>
+                    <p>Fundación Carlos Slim</p>
+                </div>
+
+                <!-- DB -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s 9-1.34 9-3V5"></path></svg>
+                    </div>
+                    <h4>Admin. Bases de Datos</h4>
+                    <p>Fundación Carlos Slim</p>
+                </div>
+
+                <!-- Full Stack -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h4>Programación Full Stack</h4>
+                    <p>DePCSuite</p>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h4>Análisis de Datos con Python</h4>
+                    <p>Curso Especializado</p>
+                </div>
+
+                <!-- Power BI -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <h4>Power BI</h4>
+                    <p>Visualización de Datos</p>
+                </div>
+
+                <!-- Frontend -->
+                <div class="cert-card ongoing">
+                    <div class="cert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                    </div>
+                    <h4>Desarrollo Frontend</h4>
+                    <p>DePCSuite (En curso)</p>
+                    <span class="badge">Cursando</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Renamed to Skills/Tech) -->
+        <section id="skills" class="section">
+            <h3 class="section-title">03. Sobre Mí & Stack Tecnológico</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Mi enfoque principal es el **Backend**, asegurando que la lógica de negocio, la seguridad 
+                        y los datos fluyan correctamente. Sin embargo, mi formación integral me permite moverme 
+                        con soltura en todo el stack.
+                    </p>
+                    <p>
+                        Actualmente trabajo como Programador Backend en <strong>Mántum Tecnología</strong>, donde:
+                        <ul>
+                            <li>Desarrollo nuevas funcionalidades para el software de la compañía.</li>
+                            <li>Brindo soporte técnico avanzado.</li>
+                            <li>Corrigo bugs y optimizo el rendimiento del sistema.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        He tenido el privilegio de formarme en instituciones reconocidas como el SENA y la UNIMINUTO, 
+                        sumando conocimientos prácticos y teóricos.
+                    </p>
+                    <ul class="skills-list">
+                        <li>PHP / Laravel</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Java / Python</li>
+                        <li>SQL / MongoDB</li>
+                        <li>Docker</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h3 class="section-title">04. Cosas que he construido</h3>
+            <div class="projects-grid">
+                
+                <!-- Proyecto 1: ABM Clientes -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">ABM Clientes</h4>
+                        <p class="project-desc">Sistema robusto para la gestión de registros de clientes (Alta, Baja, Modificación). Implementa persistencia de datos mediante JSON.</p>
+                        <ul class="project-tech">
+                            <li>PHP</li>
+                            <li>JSON</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Sistema de Gestión de Ventas -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">Sistema de Ventas</h4>
+                        <p class="project-desc">Plataforma integral (MVC) para administración de inventario y facturación. Incluye gestión asíncrona con AJAX y reportes dinámicos.</p>
+                        <ul class="project-tech">
+                            <li>PHP (MVC)</li>
+                            <li>MySQL</li>
+                            <li>AJAX/jQuery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Proyecto Integrador Laravel -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">E-Commerce Laravel</h4>
+                        <p class="project-desc">Solución Full Stack avanzada con integración de pagos (MercadoPago), panel administrativo con roles/permisos y gestión de usuarios.</p>
+                        <ul class="project-tech">
+                            <li>Laravel</li>
+                            <li>MercadoPago</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: Barbería Booking -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">BarberShop Booking</h4>
+                        <p class="project-desc">Software completo para gestión de reservas y agenda en tiempo real. Optimiza la administración del negocio y clientes.</p>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h3 class="section-title">05. ¿Qué sigue?</h3>
+            <h2 class="big-heading">Ponte en Contacto</h2>
+            <p class="contact-desc">
+                Actualmente estoy buscando nuevas oportunidades. Ya sea que tengas una pregunta 
+                o simplemente quieras saludar, haré todo lo posible para responderte.
+            </p>
+            <a href="mailto:info@yeisongarcia.com.co" class="cta-button">Saludar</a>
+            
+            <div class="social-links" style="margin-top: 50px; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://github.com/Yeistyle11" target="_blank" style="color: var(--text-color); font-size: 1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a href="https://www.linkedin.com/in/yeison-garcia-a42b372b9/" target="_blank" style="color: var(--text-color); font-size: 1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                <a href="https://wa.me/573104277843" target="_blank" style="color: var(--text-color); font-size: 1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Diseñado & Construido por Mí</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
