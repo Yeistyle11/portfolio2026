@@ -5,21 +5,24 @@
     --text-color: #8892b0;
     --heading-color: #ccd6f6;
     --accent-color: #64ffda;
+    --accent-glow: rgba(100, 255, 218, 0.4);
     --accent-tint: rgba(100, 255, 218, 0.1);
     --card-bg: #112240;
+    --card-border: #233554;
     --font-primary: 'Inter', sans-serif;
     --font-heading: 'Space Grotesk', sans-serif;
-    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: #0a192f;
     color: var(--text-color);
     font-family: var(--font-primary);
     line-height: 1.6;
@@ -194,16 +197,22 @@ ul {
 
 .cta-button {
     display: inline-block;
-    padding: 18px 28px;
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    color: var(--accent-color);
+    padding: 16px 32px;
+    background: linear-gradient(45deg, var(--accent-color), #45d6b5);
+    border: none;
+    border-radius: 8px;
+    color: #0a192f;
     font-family: var(--font-heading);
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px var(--accent-tint);
 }
 
 .cta-button:hover {
-    background-color: var(--accent-tint);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--accent-glow);
+    background: linear-gradient(45deg, #7dd3fc, var(--accent-color));
 }
 
 /* Sections General */
@@ -414,40 +423,37 @@ ul {
 
 .project-card {
     background-color: var(--card-bg);
-    padding: 2rem 1.75rem;
-    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
     transition: var(--transition);
-    cursor: default;
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid transparent;
     position: relative;
     overflow: hidden;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    border-color: rgba(100, 255, 218, 0.3);
-    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px -15px var(--accent-glow);
 }
 
-/* Add a subtle top gradient line on hover */
 .project-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: var(--accent-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    background: radial-gradient(circle at top right, var(--accent-tint), transparent 60%);
+    opacity: 0;
+    transition: var(--transition);
 }
 
 .project-card:hover::before {
-    transform: scaleX(1);
+    opacity: 1;
 }
 
 .project-top {
@@ -456,67 +462,51 @@ ul {
     align-items: center;
     margin-bottom: 25px;
     color: var(--accent-color);
-}
-
-.folder-icon svg {
-    width: 45px;
-    height: 45px;
-    stroke-width: 1.5px;
-}
-
-.project-links {
-    display: flex;
-    gap: 20px;
-}
-
-.project-links a {
-    color: var(--text-color);
-    transition: var(--transition);
-}
-
-.project-links a:hover {
-    color: var(--accent-color);
-    transform: translateY(-2px);
+    position: relative;
+    z-index: 1;
 }
 
 .project-title {
     color: var(--heading-color);
     font-size: 1.5rem;
     font-family: var(--font-heading);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: 700;
+    position: relative;
+    z-index: 1;
 }
 
 .project-desc {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
     margin-bottom: 25px;
     color: var(--text-color);
-    flex-grow: 1; /* Pushes tech stack to bottom */
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
 }
 
-/* Project Tech - Badges Style */
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    font-family: var(--font-primary); /* Cleaner font for small text */
-    font-size: 0.75rem;
-    color: var(--accent-color);
+    gap: 8px;
     margin-top: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .project-tech li {
-    background-color: rgba(100, 255, 218, 0.08); /* Subtle pill background */
-    padding: 5px 12px;
-    border-radius: 15px; /* Pill shape */
-    transition: var(--transition);
+    background-color: var(--accent-tint);
+    color: var(--accent-color);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
     border: 1px solid transparent;
 }
 
 .project-tech li:hover {
-    background-color: rgba(100, 255, 218, 0.15);
-    border-color: rgba(100, 255, 218, 0.3);
-    transform: translateY(-1px);
+    border-color: var(--accent-color);
 }
 
 /* Contact Section */
